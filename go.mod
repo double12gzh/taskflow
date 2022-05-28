@@ -1,4 +1,4 @@
-module main
+module github.com/double12gzh/taskflow
 
 go 1.17
 
