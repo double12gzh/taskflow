@@ -110,7 +110,7 @@ func main() {
 		fmt.Printf("failed to exec graph, err: %v\r\n", err.Error())
 	}
 
-	fmt.Printf("successfull execte with result: sum = %v\r\n", sum)
+	fmt.Printf("successfully execte with result: sum = %v\r\n", sum)
 
 	<-ctx.Done()
 }
