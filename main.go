@@ -16,12 +16,12 @@ import (
 		- 2 依赖于 0; 3 依赖于 1
 		- 100 依赖于 101； 200 依赖于 201; 300 依赖于 301
 
-					0               1				101				201			301
-					|               |				 |				 |			 |
-					2               3               100             200         300
+				    0               1		    101		201       301
+				    |               |		     |   	 |	   |
+				    2               3               100         200       300
 				  /   \           /   \
 				 4     5         8     9
-					   |         |     |
+				       |         |     |
 				       55        88    99
 	执行关系：
 		- 支持设定最大并发运行的任务数;
@@ -110,7 +110,7 @@ func main() {
 		fmt.Printf("failed to exec graph, err: %v\r\n", err.Error())
 	}
 
-	fmt.Printf("successfull execte with result: sum = %v\r\n", sum)
+	fmt.Printf("successfully execte with result: sum = %v\r\n", sum)
 
 	<-ctx.Done()
 }
